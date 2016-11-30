@@ -24,7 +24,7 @@ public class NERTagger {
 		"Drake, chief of staff for the Reagan Foundation.",
 		"Sakshi is the CEO of Salesforce corp. "};
 		
-		NameFinderME finder = new NameFinderME(new TokenNameFinderModel(new FileInputStream(new File("/home/jyoti/workspace-jee/QA/src/main/resources/en-ner-person.bin"))));
+		NameFinderME finder = new NameFinderME(new TokenNameFinderModel(new FileInputStream(new File("src/main/resources/en-ner-person.bin"))));
 		Tokenizer tokenizer = SimpleTokenizer.INSTANCE;
 		for(int si=0; si<sentences.length;si++){
 			String[] tokens = tokenizer.tokenize(sentences[si]);
